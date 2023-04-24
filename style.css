@@ -32,3 +32,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.hoverd {
+  border: 2px dashed #333;
+}
