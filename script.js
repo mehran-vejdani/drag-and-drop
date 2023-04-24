@@ -6,7 +6,11 @@ boxes.forEach((box) => {
     e.preventDefault();
     box.classList.add("hoverd");
   });
-  box.addEventListener("dragleave", (e) => {
-    box.classList.add("hoverd");
+  box.addEventListener("dragleave", () => {
+    box.classList.remove("hoverd");
+  });
+  box.addEventListener("drop", () => {
+    box.classList.remove("hoverd");
+    box.appendChild(image);
   });
 });
